@@ -1,14 +1,13 @@
 %define module lockfile
 
 Name:           python-%{module}
-Version:        0.8
+Version:        0.9.1
 Release:        %mkrel 1
 Summary:        Platform-independent file locking module
 Group:          Development/Python
 License:        MIT
 URL:            http://smontanaro.dyndns.org/python/
 Source0:        http://smontanaro.dyndns.org/python/%{module}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 
@@ -21,9 +20,9 @@ locking files. The lock mechanism relies on the atomic nature of the link
 %setup -q -n %{module}-%{version}
 
 %build
+:
 
 %install
-%{__rm} -rf %{buildroot}
 %{__python} setup.py install --root=%{buildroot}
  
 %clean
