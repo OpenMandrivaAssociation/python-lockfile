@@ -1,8 +1,9 @@
 %define module lockfile
+%define debug_package %{nil}
 
 Name:           python-%{module}
 Version:        0.9.1
-Release:        %mkrel 1
+Release:        2
 Summary:        Platform-independent file locking module
 Group:          Development/Python
 License:        MIT
@@ -23,24 +24,8 @@ locking files. The lock mechanism relies on the atomic nature of the link
 :
 
 %install
-%{__python} setup.py install --root=%{buildroot}
- 
-%clean
-rm -rf %{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %doc doc/* LICENSE MANIFEST README RELEASE-NOTES ACKS
-%{python_sitelib}/*
-
-
-%changelog
-* Wed May 11 2011 Sandro Cazzaniga <kharec@mandriva.org> 0.9.1-1mdv2011.0
-+ Revision: 673562
-- new version
-- add ":" in build for fix rpmlint warning
-
-* Thu Mar 18 2010 Caio Begotti <caio1982@mandriva.org> 0.8-1mdv2011.0
-+ Revision: 525009
-- import python-lockfile
-
+%{py_puresitedir}/*
