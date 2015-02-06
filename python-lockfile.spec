@@ -3,7 +3,7 @@
 
 Name:           python-%{module}
 Version:        0.9.1
-Release:        2
+Release:        3
 Summary:        Platform-independent file locking module
 Group:          Development/Python
 License:        MIT
