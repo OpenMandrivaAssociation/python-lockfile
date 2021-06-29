@@ -30,5 +30,5 @@ locking files. The lock mechanism relies on the atomic nature of the link
 
 %files
 %doc doc/* LICENSE README* RELEASE-NOTES ACKS
-%{python_sitearch}/lockfile
-%{python_sitearch}/lockfile-*.egg-info
+#{python_sitearch}/lockfile
+#{python_sitearch}/lockfile-*.egg-info
