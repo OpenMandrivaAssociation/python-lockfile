@@ -1,5 +1,5 @@
 %define module lockfile
-#define debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 Name:           python-%{module}
 Version:        0.12.2
