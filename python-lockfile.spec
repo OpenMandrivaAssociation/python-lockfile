@@ -29,5 +29,6 @@ locking files. The lock mechanism relies on the atomic nature of the link
 %py_install
 
 %files
-%doc doc/* LICENSE MANIFEST README RELEASE-NOTES ACKS
-%{py_puresitedir}/*
+%doc doc/* LICENSE README* RELEASE-NOTES ACKS
+%{python_sitearch}/lockfile
+%{python_sitearch}/lockfile-*.egg-info
