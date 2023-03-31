@@ -2,7 +2,7 @@
 
 Name:           python-%{module}
 Version:        0.12.2
-Release:        1
+Release:        2
 Summary:        Platform-independent file locking module
 Group:          Development/Python
 License:        MIT
