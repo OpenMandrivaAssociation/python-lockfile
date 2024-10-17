@@ -6,7 +6,7 @@ Release:        2
 Summary:        Platform-independent file locking module
 Group:          Development/Python
 License:        MIT
-URL:            http://pypi.org/project/lockfile
+URL:            https://pypi.org/project/lockfile
 Source0:        https://files.pythonhosted.org/packages/source/l/lockfile/lockfile-%{version}.tar.gz
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python%{pyver}dist(setuptools)
