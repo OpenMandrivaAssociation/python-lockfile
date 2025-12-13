@@ -11,6 +11,7 @@ Source0:        https://files.pythonhosted.org/packages/source/l/lockfile/lockfi
 BuildSystem:	python
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(wheel)
+BuildRequires:  python%{pyver}dist(pbr)
 BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(nose)
 BuildArch:	noarch
